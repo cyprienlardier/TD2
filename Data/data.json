@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Cyprien Lardier",
+    "title": "Développeur Full Stack",
+    "email": "cyprien@example.com",
+    "phone": "+33 6 XX XX XX XX",
+    "location": "France",
+    "image": "https://via.placeholder.com/100"
+  }
+]
