@@ -1,5 +1,5 @@
-import card from "./components/Card";
-import data from "./data/data.";
+import Card from "./components/Card";
+import data from "./data/data";
 
 function App() {
   return (
@@ -7,9 +7,9 @@ function App() {
       <h1>Hello World! </h1>
 
       <ul className="flex justify-center gap-1.5">
-        '{data.map((plan) => (
+        {data.map((plan) => (
           <li key ={plan.id}>
-            <card 
+            <Card 
            title={plan.title}
             price={plan.Price}
             storage={plan.Storage}
