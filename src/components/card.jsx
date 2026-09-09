@@ -1,14 +1,16 @@
-export default function Card({ title, Price, Storage, Users, upside, annual }) {
+export default function Card({ title, price, storage, users, upside, featured, annual, Featured, Active }) {
+  const cardClass = featured ? "pricing-card pricing-card--featured" : "pricing-card";
+
   return (
-    <div className="pricing-card">
+    <div className={cardClass}>
       <h2 className="card-title">{title}</h2>
       <div className="card-price">
         <span className="currency">$</span>
-        <span className="amount">{Price.toFixed(2)}</span>
+        <span className="amount">{price.toFixed(2)}</span>
       </div>
       <ul className="card-features">
-        <li>{Storage}</li>
-        <li>{Users}</li>
+        <li>{storage}</li>
+        <li>{users}</li>
         <li>{upside}</li>
       </ul>
       <button className="card-button">LEARN MORE</button>
